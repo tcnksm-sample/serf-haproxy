@@ -1,0 +1,14 @@
+{
+    "tags": {
+        "role": "lb"
+    },
+
+    "node_name": "proxy",
+
+    "bind": "172.20.20.10",
+
+    "event_handlers": [
+        "ruby handler.rb",
+        "query:load=uptime"
+    ]
+}
